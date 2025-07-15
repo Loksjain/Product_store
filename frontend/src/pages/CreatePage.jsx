@@ -48,7 +48,7 @@ const CreatePage = () => {
 							onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
 						/>
 						<Input
-							placeholder='Price'
+							placeholder='Price (in ₹)'
 							name='price'
 							type='number'
 							value={newProduct.price}

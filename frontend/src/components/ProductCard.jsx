@@ -93,7 +93,7 @@ const ProductCard = ({ product }) => {
 				</Heading>
 
 				<Text fontWeight='bold' fontSize='xl' color={textColor} mb={4}>
-					${product.price}
+					₹{product.price}
 				</Text>
 
 				<HStack spacing={2}>
@@ -121,7 +121,7 @@ const ProductCard = ({ product }) => {
 								onChange={(e) => setUpdatedProduct({ ...updatedProduct, name: e.target.value })}
 							/>
 							<Input
-								placeholder='Price'
+								placeholder='Price (in ₹)'
 								name='price'
 								type='number'
 								value={updatedProduct.price}
